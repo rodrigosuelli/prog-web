@@ -12,8 +12,7 @@
     <input type="number" name="altura" id="altura" />
     <label for="peso">peso</label>
     <input type="number" name="peso" id="peso" />
-    <p>Resultado:</p>
-    <p id="resultado"></p>
+    <p id="resultado">Resultado:</p>
     <button onclick="calcular()">Calcular</button>
 
     <script>
@@ -24,7 +23,7 @@
         const altura = document.querySelector('#altura').value;
         const peso = document.querySelector('#peso').value;
         const imc = peso / (altura * altura);
-        pResultado.textContent = imc;
+        pResultado.textContent = `Resultado: ${imc}`;
       }
     </script>
   </body>
