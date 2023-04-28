@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>IMC</h1>
+    <label for="altura">altura em metros</label>
+    <input type="number" name="altura" id="altura" />
+    <label for="peso">peso</label>
+    <input type="number" name="peso" id="peso" />
+    <p>Resultado:</p>
+    <p id="resultado"></p>
+    <button onclick="calcular()">Calcular</button>
+
+    <script>
+      const pResultado = document.querySelector('#resultado');
+      const pMensagem = document.querySelector('#mensagem');
+
+      function calcular() {
+        const altura = document.querySelector('#altura').value;
+        const peso = document.querySelector('#peso').value;
+        const imc = peso / (altura * altura);
+        pResultado.textContent = imc;
+      }
+    </script>
+  </body>
+</html>

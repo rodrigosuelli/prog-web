@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function sorteio() {
+        let n1 = 0;
+        let n2 = 0;
+        let n3 = 0;
+
+        let counter = 0;
+        while (n1 !== 7 || n2 !== 7 || n3 !== 7) {
+          n1 = Math.floor(Math.random() * 10);
+          n2 = Math.floor(Math.random() * 10);
+          n3 = Math.floor(Math.random() * 10);
+          if (n1 !== 7 || n2 !== 7 || n3 !== 7) {
+            document.write(counter + ' PERDEU com ' + n1 + n2 + n3 + '<br>');
+            counter++;
+          }
+        }
+
+        document.write(counter + ' GANHOU com ' + n1 + n2 + n3 + '<br>');
+      }
+
+      sorteio();
+    </script>
+  </body>
+</html>
