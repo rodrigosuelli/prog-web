@@ -58,7 +58,7 @@
         <td><?php echo $registro['descricao']; ?></td>
         <td><?php echo $registro['qtd']; ?></td>
         <td><a href='./alterar.html'>Alterar</a></td>
-        <td><a href='./deletar.php'>Deletar</a></td>
+        <td><a href='./deletar.html'>Deletar</a></td>
       </tr>
     <?php endwhile ?>
 
